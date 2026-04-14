@@ -1,5 +1,5 @@
 {
-  "buildCommand": "mkdir -p dist-proxy",
+  "buildCommand": "mkdir -p dist-proxy && touch dist-proxy/.gitkeep",
   "outputDirectory": "dist-proxy",
   "rewrites": [
     {
