@@ -1,7 +1,7 @@
 export const SITE_NAME = 'Rugee'
 
 export const SITE_DESCRIPTION =
-  'Websites and lightweight business systems for growing small businesses that want less manual work and simpler operations.'
+  'Ruijie (Rugee) Fan — full-stack developer in Sydney. I build software small businesses actually run on: TypeScript, React, Node and PostgreSQL, from schema to deployment.'
 
 export const SITE_TAGLINE =
   'Clearer websites and lightweight systems that help small businesses reduce repeated admin and run more clearly.'

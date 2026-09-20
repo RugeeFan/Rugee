@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og'
-import { SITE_DESCRIPTION, SITE_NAME } from '../lib/site'
+import { SITE_NAME } from '../lib/site'
 
 export const runtime = 'edge'
 export const alt = `${SITE_NAME} preview image`
@@ -44,7 +44,7 @@ export default function OpenGraphImage() {
                 color: '#5c5c5c',
               }}
             >
-              Websites and lightweight systems
+              Full-stack developer · Sydney
             </div>
             <div
               style={{
@@ -54,7 +54,7 @@ export default function OpenGraphImage() {
                 letterSpacing: '-0.06em',
               }}
             >
-              Less manual work for growing businesses.
+              I build software small businesses actually run on.
             </div>
             <div
               style={{
@@ -64,7 +64,7 @@ export default function OpenGraphImage() {
                 maxWidth: '820px',
               }}
             >
-              {SITE_DESCRIPTION}
+              Ruijie (Rugee) Fan — TypeScript, React, Node and PostgreSQL, from database schema to deployment.
             </div>
           </div>
 
@@ -76,7 +76,7 @@ export default function OpenGraphImage() {
                 flexWrap: 'wrap',
               }}
             >
-              {['Direct collaboration', 'Phased delivery', 'No technical spec needed'].map(
+              {['5 shipped products', '2,250+ real jobs processed', 'Open to roles Australia-wide'].map(
                 item => (
                   <div
                     key={item}

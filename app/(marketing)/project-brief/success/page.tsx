@@ -74,7 +74,7 @@ export default async function ProjectBriefSuccessPage({
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/"
+                href="/studio"
                 className="inline-flex rounded-full bg-black px-5 py-3 text-sm font-medium text-white"
               >
                 Back to home
@@ -118,7 +118,7 @@ export default async function ProjectBriefSuccessPage({
                 Start a new brief
               </Link>
               <Link
-                href="/"
+                href="/studio"
                 className="inline-flex rounded-full border border-black/10 px-5 py-3 text-sm font-medium text-primary"
               >
                 Back to home
@@ -291,7 +291,7 @@ export default async function ProjectBriefSuccessPage({
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              href="/"
+              href="/studio"
               className="inline-flex rounded-full bg-black px-5 py-3 text-sm font-medium text-white"
             >
               Back to home

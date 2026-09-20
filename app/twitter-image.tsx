@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/og'
-import { SITE_DESCRIPTION, SITE_NAME } from '../lib/site'
+import { SITE_NAME } from '../lib/site'
 
 export const runtime = 'edge'
 export const alt = `${SITE_NAME} twitter preview image`
@@ -64,7 +64,7 @@ export default function TwitterImage() {
                 maxWidth: '840px',
               }}
             >
-              {SITE_DESCRIPTION}
+              Ruijie (Rugee) Fan — TypeScript, React, Node and PostgreSQL, from database schema to deployment.
             </div>
           </div>
 

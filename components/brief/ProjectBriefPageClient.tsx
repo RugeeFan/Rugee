@@ -562,7 +562,7 @@ export default function ProjectBriefPageClient({
             <div>
               {!isModal ? (
                 <Link
-                  href="/"
+                  href="/studio"
                   className="mb-3 inline-flex text-xs uppercase tracking-[0.22em] text-secondary transition hover:text-primary"
                 >
                   Back to home

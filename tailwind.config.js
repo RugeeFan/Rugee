@@ -17,7 +17,7 @@ export default {
         'section-bg': '#F8F8F8',
       },
       fontFamily: {
-        sans: ['Otterco Display', 'sans-serif'],
+        sans: ['Otterco Display', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         float: {

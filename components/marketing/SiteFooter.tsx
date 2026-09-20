@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { CONTACT_EMAIL, WHATSAPP_URL, SITE_NAME, SITE_TAGLINE } from '../../lib/site'
 
 const footerLinks = [
+  { label: 'About Rugee', href: '/', external: false },
   { label: 'Project planner', href: '/project-brief', external: false },
   { label: 'WhatsApp', href: WHATSAPP_URL, external: true },
 ]

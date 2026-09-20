@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import AnalyticsScripts from '../components/analytics/AnalyticsScripts'
-import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, getSiteUrl } from '../lib/site'
+import { SITE_DESCRIPTION, SITE_NAME, getSiteUrl } from '../lib/site'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -15,17 +15,17 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   keywords: [
-    'small business website',
-    'business workflow system',
-    'operations automation',
-    'custom business system',
-    'lead generation website',
-    'small business process improvement',
+    'full-stack developer Sydney',
+    'React developer Australia',
+    'Next.js developer',
+    'TypeScript developer',
+    'Ruijie Fan',
+    'Rugee',
   ],
-  category: 'business',
+  category: 'technology',
   openGraph: {
     title: SITE_NAME,
-    description: SITE_TAGLINE,
+    description: SITE_DESCRIPTION,
     url: '/',
     siteName: SITE_NAME,
     type: 'website',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: SITE_NAME,
-    description: SITE_TAGLINE,
+    description: SITE_DESCRIPTION,
     images: ['/twitter-image'],
   },
   robots: {
@@ -62,8 +62,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="font-sans bg-white text-primary antialiased">
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js-ready')" }} />
         <AnalyticsScripts />
         {children}
       </body>
