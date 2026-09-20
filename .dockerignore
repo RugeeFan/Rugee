@@ -1,0 +1,12 @@
+node_modules
+.next
+dist
+.git
+.gitignore
+.claude
+.dev-data
+coverage
+*.log
+tmp
+.DS_Store
+

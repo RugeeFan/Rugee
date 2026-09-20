@@ -6,6 +6,9 @@
 # Production
 /dist
 /build
+/.next
+/.dev-data
+tsconfig.tsbuildinfo
 
 # Misc
 .DS_Store
@@ -26,3 +29,4 @@ yarn-error.log*
 
 # Vercel
 .vercel
+.claude/
