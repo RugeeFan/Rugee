@@ -1,0 +1,7 @@
+dist
+src
+.dev-data
+.env*
+!.env.example
+index.html
+vite.config.js
