@@ -145,32 +145,32 @@ export const WORK: WorkItem[] = [
     },
   },
   {
-    id: 'mintage',
+    id: 'effigy',
     index: '05',
-    name: 'Mintage',
+    name: 'Effigy',
     year: '2026',
-    href: 'https://mintage-coin.vercel.app',
-    hrefLabel: 'mintage-coin.vercel.app',
-    image: { src: '/images/work/mintage-gallery.jpg', alt: 'Mintage gallery of generated 3D coins', dark: true },
+    href: 'https://effigies.vercel.app',
+    hrefLabel: 'effigies.vercel.app',
+    image: { src: '/images/work/effigy-gallery.jpg', alt: 'Effigy gallery of generated 3D coins', dark: true },
     stack: ['Next.js 16', 'React Three Fiber', 'wagmi / viem', 'Solidity', 'Foundry'],
     kind: {
       en: 'Generative on-chain NFT · personal project',
       zh: '链上生成式 NFT · 个人项目',
     },
     summary: {
-      en: 'Every wallet is a coin struck by time: your on-chain history becomes a one-of-a-kind 3D antique coin you can mint.',
+      en: 'Your on-chain life, struck in effigy: a wallet’s history becomes a one-of-a-kind 3D antique coin you can mint.',
       zh: '每个钱包都是一枚被时间铸造的硬币：你的链上历史会生成一枚独一无二、可以铸造的 3D 古币。',
     },
     points: {
       en: [
         'ERC-721 with ERC-2981 royalties and EIP-712 signed vouchers that block forged traits; verified on Base Sepolia.',
         '17 Foundry tests including fuzzing.',
-        'GPU-tier detection with a mobile WebGL fallback; static assets cut from 358 MB to 80 MB.',
+        'Coin models compressed 81 MB → 18 MB (meshopt) and fully preloaded; GPU-tier detection with a mobile WebGL fallback.',
       ],
       zh: [
         'ERC-721 + ERC-2981 版税，EIP-712 签名凭证防止伪造属性；已在 Base Sepolia 部署并验证。',
         '17 个 Foundry 测试，包含模糊测试。',
-        'GPU 分级检测与移动端 WebGL 降级；静态资源从 358 MB 压到 80 MB。',
+        '硬币模型经 meshopt 从 81 MB 压到 18 MB 并全量预载；GPU 分级检测与移动端 WebGL 降级。',
       ],
     },
   },
@@ -276,7 +276,7 @@ export const DICT: Record<Locale, Dict> = {
       eyebrow: 'Path',
       title: 'The short version.',
       items: [
-        { when: '2026', what: 'Shipped Mintage and joined the SaunaMind team', where: 'Web3 · React Native' },
+        { when: '2026', what: 'Shipped Effigy and joined the SaunaMind team', where: 'Web3 · React Native' },
         { when: '2025', what: 'Client work through Ruge Solutions Pty Ltd', where: 'Royal Rose · Flower Hut' },
         { when: '2020 —', what: 'Co-founded and run a family cleaning business', where: 'PureGlim · Sydney' },
         { when: '2020', what: 'Master of Computer Science', where: 'University of Wollongong' },
@@ -350,7 +350,7 @@ export const DICT: Record<Locale, Dict> = {
       eyebrow: '经历',
       title: '简短版本。',
       items: [
-        { when: '2026', what: '发布 Mintage，并加入 SaunaMind 团队', where: 'Web3 · React Native' },
+        { when: '2026', what: '发布 Effigy，并加入 SaunaMind 团队', where: 'Web3 · React Native' },
         { when: '2025', what: '通过 Ruge Solutions Pty Ltd 承接客户项目', where: 'Royal Rose · Flower Hut' },
         { when: '2020 —', what: '与家人共同创办并经营清洁公司', where: 'PureGlim · 悉尼' },
         { when: '2020', what: '计算机科学硕士', where: '卧龙岗大学 (UOW)' },
