@@ -149,8 +149,8 @@ export const WORK: WorkItem[] = [
     index: '05',
     name: 'Effigy',
     year: '2026',
-    href: 'https://effigies.vercel.app',
-    hrefLabel: 'effigies.vercel.app',
+    href: 'https://effigy-coin.vercel.app',
+    hrefLabel: 'effigy-coin.vercel.app',
     image: { src: '/images/work/effigy-gallery.jpg', alt: 'Effigy gallery of generated 3D coins', dark: true },
     stack: ['Next.js 16', 'React Three Fiber', 'wagmi / viem', 'Solidity', 'Foundry'],
     kind: {
