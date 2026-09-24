@@ -25,8 +25,38 @@ export type WorkItem = {
 
 export const WORK: WorkItem[] = [
   {
-    id: 'cleaning-manager',
+    id: 'pureglim',
     index: '01',
+    name: 'PureGlim',
+    year: '2026',
+    href: 'https://pureglim.com.au',
+    hrefLabel: 'pureglim.com.au',
+    image: { src: '/images/work/pureglim.jpg', alt: 'PureGlim cleaning booking website' },
+    stack: ['Next.js 16', 'PostgreSQL', 'Prisma', 'Twilio Verify', 'Google Maps'],
+    kind: {
+      en: 'Booking site, referral platform & admin',
+      zh: '预约网站、推荐返佣平台与后台',
+    },
+    summary: {
+      en: 'The customer-facing side of the cleaning business: instant quotes, bookings, and a referral program that tracks its own commissions.',
+      zh: '清洁生意面向客户的一侧：即时报价、在线预约，以及一套能自己核算佣金的推荐计划。',
+    },
+    points: {
+      en: [
+        'Quote flows with a live price estimator and Google address autocomplete.',
+        'Referral program: phone-OTP sign-up, unique codes, commission tracking, payout dashboard.',
+        'Rate limiting and brute-force lockout; 11 data-driven suburb pages with structured data for local SEO.',
+      ],
+      zh: [
+        '报价流程带实时价格估算与 Google 地址自动补全。',
+        '推荐计划：手机验证码注册、唯一推荐码、佣金追踪、结算看板。',
+        '限流与防暴力破解；11 个数据驱动的区域落地页，带结构化数据做本地 SEO。',
+      ],
+    },
+  },
+  {
+    id: 'cleaning-manager',
+    index: '02',
     name: 'Cleaning Manager',
     year: '2025 — now',
     href: 'https://cleaning-manager-showcase.vercel.app',
@@ -56,8 +86,38 @@ export const WORK: WorkItem[] = [
     metric: { value: '2,250+', label: { en: 'real jobs processed', zh: '个真实任务已处理' } },
   },
   {
+    id: 'effigy',
+    index: '03',
+    name: 'Effigy',
+    year: '2026',
+    href: 'https://effigy-coin.vercel.app',
+    hrefLabel: 'effigy-coin.vercel.app',
+    image: { src: '/images/work/effigy-gallery.jpg', alt: 'Effigy gallery of generated 3D coins', dark: true },
+    stack: ['Next.js 16', 'React Three Fiber', 'wagmi / viem', 'Solidity', 'Foundry'],
+    kind: {
+      en: 'Generative on-chain NFT · personal project',
+      zh: '链上生成式 NFT · 个人项目',
+    },
+    summary: {
+      en: 'Your on-chain life, struck in effigy: a wallet’s history becomes a one-of-a-kind 3D antique coin you can mint.',
+      zh: '每个钱包都是一枚被时间铸造的硬币：你的链上历史会生成一枚独一无二、可以铸造的 3D 古币。',
+    },
+    points: {
+      en: [
+        'ERC-721 with ERC-2981 royalties and EIP-712 signed vouchers that block forged traits; verified on Base Sepolia.',
+        '17 Foundry tests including fuzzing.',
+        'Coin models compressed 81 MB → 18 MB (meshopt) and fully preloaded; GPU-tier detection with a mobile WebGL fallback.',
+      ],
+      zh: [
+        'ERC-721 + ERC-2981 版税，EIP-712 签名凭证防止伪造属性；已在 Base Sepolia 部署并验证。',
+        '17 个 Foundry 测试，包含模糊测试。',
+        '硬币模型经 meshopt 从 81 MB 压到 18 MB 并全量预载；GPU 分级检测与移动端 WebGL 降级。',
+      ],
+    },
+  },
+  {
     id: 'royal-rose',
-    index: '02',
+    index: '04',
     name: 'Royal Rose',
     year: '2025 — now',
     href: 'https://www.royalrose.com.au',
@@ -85,94 +145,6 @@ export const WORK: WorkItem[] = [
       ],
     },
     metric: { value: 'Live', label: { en: 'taking real payments', zh: '线上真实收款' } },
-  },
-  {
-    id: 'saunamind',
-    index: '03',
-    name: 'SaunaMind',
-    year: '2026',
-    stack: ['React Native', 'Expo', 'TypeScript', 'Supabase', 'Skia', 'Reanimated'],
-    kind: {
-      en: 'iOS wellness app · 3-person team',
-      zh: 'iOS 健康应用 · 三人团队',
-    },
-    summary: {
-      en: 'Joined an existing 800-commit codebase for a sauna and cold-plunge tracker with live heart-rate sessions — and made myself useful fast.',
-      zh: '中途加入一个已有 800+ 次提交的桑拿 / 冷水浴训练应用（实时心率），并快速产出。',
-    },
-    points: {
-      en: [
-        'Closed P0 security gaps: Supabase row-level security, signature checks on Twilio and RevenueCat webhooks.',
-        'Led the front-end redesign — design tokens, a real-time session UI in Skia / Reanimated, Dynamic Island Live Activity.',
-        'Handed the work back with audit reports, a test guide and hand-over docs.',
-      ],
-      zh: [
-        '修复 P0 级安全问题：Supabase 行级安全、Twilio 与 RevenueCat webhook 的签名校验。',
-        '主导前端重设计——设计令牌、基于 Skia / Reanimated 的实时训练界面、灵动岛实时活动。',
-        '交付时附带审计报告、测试指南与交接文档。',
-      ],
-    },
-    metric: { value: '155', label: { en: 'commits in 4 weeks', zh: '次提交 · 4 周内' } },
-  },
-  {
-    id: 'pureglim',
-    index: '04',
-    name: 'PureGlim',
-    year: '2026',
-    href: 'https://pureglim.com.au',
-    hrefLabel: 'pureglim.com.au',
-    image: { src: '/images/work/pureglim.jpg', alt: 'PureGlim cleaning booking website' },
-    stack: ['Next.js 16', 'PostgreSQL', 'Prisma', 'Twilio Verify', 'Google Maps'],
-    kind: {
-      en: 'Booking site, referral platform & admin',
-      zh: '预约网站、推荐返佣平台与后台',
-    },
-    summary: {
-      en: 'The customer-facing side of the cleaning business: instant quotes, bookings, and a referral program that tracks its own commissions.',
-      zh: '清洁生意面向客户的一侧：即时报价、在线预约，以及一套能自己核算佣金的推荐计划。',
-    },
-    points: {
-      en: [
-        'Quote flows with a live price estimator and Google address autocomplete.',
-        'Referral program: phone-OTP sign-up, unique codes, commission tracking, payout dashboard.',
-        'Rate limiting and brute-force lockout; 11 data-driven suburb pages with structured data for local SEO.',
-      ],
-      zh: [
-        '报价流程带实时价格估算与 Google 地址自动补全。',
-        '推荐计划：手机验证码注册、唯一推荐码、佣金追踪、结算看板。',
-        '限流与防暴力破解；11 个数据驱动的区域落地页，带结构化数据做本地 SEO。',
-      ],
-    },
-  },
-  {
-    id: 'effigy',
-    index: '05',
-    name: 'Effigy',
-    year: '2026',
-    href: 'https://effigy-coin.vercel.app',
-    hrefLabel: 'effigy-coin.vercel.app',
-    image: { src: '/images/work/effigy-gallery.jpg', alt: 'Effigy gallery of generated 3D coins', dark: true },
-    stack: ['Next.js 16', 'React Three Fiber', 'wagmi / viem', 'Solidity', 'Foundry'],
-    kind: {
-      en: 'Generative on-chain NFT · personal project',
-      zh: '链上生成式 NFT · 个人项目',
-    },
-    summary: {
-      en: 'Your on-chain life, struck in effigy: a wallet’s history becomes a one-of-a-kind 3D antique coin you can mint.',
-      zh: '每个钱包都是一枚被时间铸造的硬币：你的链上历史会生成一枚独一无二、可以铸造的 3D 古币。',
-    },
-    points: {
-      en: [
-        'ERC-721 with ERC-2981 royalties and EIP-712 signed vouchers that block forged traits; verified on Base Sepolia.',
-        '17 Foundry tests including fuzzing.',
-        'Coin models compressed 81 MB → 18 MB (meshopt) and fully preloaded; GPU-tier detection with a mobile WebGL fallback.',
-      ],
-      zh: [
-        'ERC-721 + ERC-2981 版税，EIP-712 签名凭证防止伪造属性；已在 Base Sepolia 部署并验证。',
-        '17 个 Foundry 测试，包含模糊测试。',
-        '硬币模型经 meshopt 从 81 MB 压到 18 MB 并全量预载；GPU 分级检测与移动端 WebGL 降级。',
-      ],
-    },
   },
 ]
 
